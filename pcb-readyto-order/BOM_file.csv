@@ -1,0 +1,11 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";;
+"1";"J3";"PinHeader_1x02_P2.54mm_Vertical";"1";"Conn_01x02_Male";;;
+"2";"G1";"Suino";"1";"LOGO";;;
+"3";"D2,D3,D1";"D_SOD-323_HandSoldering";"3";"D";;;
+"4";"R4,R3";"R_0603_1608Metric_Pad0.98x0.95mm_HandSolder";"2";"DNP";;;
+"5";"U1";"SOT-23-5";"1";"LD3985M33R_SOT23";;;
+"6";"R2,R1";"R_0603_1608Metric_Pad0.98x0.95mm_HandSolder";"2";"R";;;
+"7";"J2";"PinHeader_2x05_P2.54mm_Vertical";"1";"Power header";;;
+"8";"C5,C4,C3,C2,C1";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";"5";"C";;;
+"9";"J1";"PinHeader_2x05_P2.54mm_Vertical";"1";"Programmer";;;
+"10";"A1";"TINY2040";"1";"TINY2040";"PIM-558";;

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name TINY2040)(type Legacy)(uri ${KIPRJMOD}/TINY2040/TINY2040.lib)(options "")(descr ""))
+)

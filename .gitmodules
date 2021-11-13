@@ -1,0 +1,6 @@
+[submodule "picoprobe"]
+	path = picoprobe
+	url = https://github.com/raspberrypi/picoprobe.git
+[submodule "pico-sdk"]
+	path = pico-sdk
+	url = git@github.com:raspberrypi/pico-sdk.git

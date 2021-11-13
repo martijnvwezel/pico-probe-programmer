@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name TINY2040)(type KiCad)(uri ${KIPRJMOD}/TINY2040)(options "")(descr ""))
+  (lib (name Muino_debugger)(type KiCad)(uri C:/Users/marti/Documents/KICAD/Muino_debugger)(options "")(descr ""))
+)
