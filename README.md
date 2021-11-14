@@ -55,4 +55,4 @@ In the future I want to add some extra features like read voltage of target and 
 # Hardware licence 
 The hardware is licensed under [CERN-OHL-S v2](https://cern.ch/cern-ohl).
 
-[![Muino]](https://certification.oshwa.org/de000089.html)
+[![Muino](https://certification.oshwa.org/de000089.html)
