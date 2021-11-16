@@ -13,8 +13,8 @@ Add the paths to the system, you should restart `git-bash` always fully, so all 
 <img src="./path_env.png" alt="windows env UGH" class="center"/>
 <img src="./path_env2.png" alt="windows env UGH" height="200" class="center"/>
 
-`OPENOCD_SCRIPTS` -> with value `c:\openocd\tcl` 
-`Path` -> add the following `C:\openocd\src`
+* `OPENOCD_SCRIPTS` -> with value `c:\openocd\tcl` 
+* `Path` -> add the following `C:\openocd\src`
 A without the env solution, you can use the `-s` option:
 ``` bash
 openocd -f interface/picoprobe.cfg -f target/rp2040.cfg -s /c/openocd/tcl/
