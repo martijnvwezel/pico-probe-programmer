@@ -1,6 +1,7 @@
 # pico-probe-programmer
 The pico can be used to program other devices. Raspberry pi made such an effort. However there is no board yet, that is open-source and can be used with openocd as a general purpose programmer.
 
+<img src="./docs/PROGRAMMER.png" alt="pcb of the pico probe programmer" height="350" class="center"/>
 
 <img src="./docs/Muino_debugger.png" alt="pcb of the pico probe programmer" height="350" class="center"/>
 
