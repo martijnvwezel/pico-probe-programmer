@@ -51,3 +51,7 @@ In the future I want to add some extra features like read voltage of target and 
 # Layout
 
 <img src="./docs/pcb_layout.png" alt="Layout of the PCB" class="center"/>
+
+
+# Hardware licence 
+The hardware is licensed under [CERN-OHL-S v2](https://cern.ch/cern-ohl).
