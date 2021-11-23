@@ -1,12 +1,35 @@
 # pico-probe-programmer
 The pico can be used to program other devices. Raspberry pi made such an effort. However there is no board yet, that is open-source and can be used with openocd as a general purpose programmer.
 
-<img src="./docs/PROGRAMMER.png" alt="pcb of the pico probe programmer" height="350" class="center"/>
+<img class=" transform: rotate(45deg);" src="./docs/PROGRAMMER.png" alt="pcb of the pico probe programmer" height="350" class="center"/>
 
 <img src="./docs/Muino_debugger.png" alt="pcb of the pico probe programmer" height="350" class="center"/>
 
+
+# Why Probe and not segger jlink?
+Segger jlink bugged me, because I am using a Jlink at home, but it is not compatible anymore with the newest generation of Cortex chips. Another issue that I had was **mistakes**, I dont make them that often, but if I do I want my debugger to be able to change the pinout, like a RX,TX swap. In one of the boards I made somehow SWO and Rx got on wrong pin, using the pico probe I could change the location of the pins and everything worked fine :).
+
+```bash 
+# Change the pins : pico-probe/src/picoprobe_config.h
+# Build:
+cd pico-probe
+mkdir build/
+cd build/
+cmake ..
+make -j
+# Connect the picoprobe, pressing the boot button
+# it shows a folder and place the file picoprobe.uf2 from the build folder
+# Updated picoprobe
+# for windows see docs/windows-install.md
+``` 
+
+<img src="./docs/change_rxtx.png" alt="pi nchange"  class="center"/>
+  
+> Smalle note: the Tx 5 is not usable in this example. I didn't need it anyway.
+
 # A quick order ordering
 Take a PCB maker like JLCPCB. Use the all the files from the `pcb-readyto-order/`, the Bom fils is not needed for that, but there is a list of the different type of components. The complete list needs to be updated soon. When I finally understand the BOM generation of Kicad. See tempory list below under *Design choice* chapter.
+
 
 
 # What software is needed?
@@ -49,7 +72,6 @@ List of values, soon to be added to the schematics
 In the future I want to add some extra features like read voltage of target and detection of GND. Though making it a pull-up (internally in the 2040), and read the voltage on the pin. The voltage read is what Segger-Jlinks do to detect voltage issues on target board.
 
 # Layout
-
 <img src="./docs/pcb_layout.png" alt="Layout of the PCB" class="center"/>
 
 

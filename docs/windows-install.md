@@ -10,19 +10,21 @@ Follow the tutorial [digikey-tutorial](https://www.digikey.nl/en/maker/projects/
 ## Step 3 
 Add the paths to the system, you should restart `git-bash` always fully, so all windows should be closed, or just reboot just to be sure. The following are the paths:  
 
+### add to the path
 <img src="./path_env.png" alt="windows env UGH" class="center"/>
 <img src="./path_env2.png" alt="windows env UGH" height="200" class="center"/>
 
-* `OPENOCD_SCRIPTS` -> with value `c:\openocd\tcl` 
+* `OPENOCD_SCRIPTS` -> with value `env
+` 
 * `Path` -> add the following `C:\openocd\src`
+
+### without changing the paths
 A without the env solution, you can use the `-s` option:
 ``` bash
 openocd -f interface/picoprobe.cfg -f target/rp2040.cfg -s /c/openocd/tcl/
 ``` 
 
-Add the following files into the same directory (`src`) as the `openocd.exe`, where the location is:
-* `tcl/interface/picoprobe.cfg` 
-* `tcl/target/rp2040.cfg` 
+
 
 ## Step 4
 Validate if everythings works fine
@@ -34,7 +36,18 @@ openocd -f interface/picoprobe.cfg -f target/rp2040.cfg
 The DAP init failed means that it didn't correctly connect with the device that you want to connect to. Check the cables or connections to the pins.
 
 ## Step 5
-Happy programming/debugging.
+Make your life easier to add a `picoprobe.bat` in the `src/` folder of the `openocd/src/picoprobe.bat`
+With the following information:
+``` shell
+openocd.exe -s ./tcl -f interface/picoprobe.cfg -f target/rp2040.cfg -f listen-all.cfg
+```
+Then you only have to type .picoprobe.bat in a terminal. 
+
+## LISTEN-ALL.CFG
+If you prefere to run it as an server you need the listen-all.cfg config. For the use PlatformIO tool this is needed.
+
+
+# Happy programming/debugging.
 
 
 
