@@ -1,0 +1,4 @@
+bom: pcb-kicad/Muino_debugger.kicad_pcb
+eda:
+  type: kicad
+  pcb: pcb-kicad/Muino_debugger.kicad_pcb
