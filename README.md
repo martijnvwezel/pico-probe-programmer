@@ -7,7 +7,7 @@ The pico can be used to program other devices. Raspberry pi made such an effort.
 
 
 # Why Probe and not segger jlink?
-Segger jlink bugged me, because I am using a Jlink at home, but it is not compatible anymore with the newest generation of Cortex chips. Another issue that I had was **mistakes**, I dont make them that often, but if I do I want my debugger to be able to change the pinout, like a RX,TX swap. In one of the boards I made somehow SWO and Rx got on wrong pin, using the pico probe I could change the location of the pins and everything worked fine :).
+Segger Jlink bugged me because I am using a Jlink at home, and it's not compatible anymore with the newest generation of Cortex chips. Another issue that I made, I don't make them that often, but if I do I want my debugger to be able to change the pinout, like an RX, TX swap. In one of the boards, I made somehow SWO and Rx got on the wrong pin, using the pico probe I could change the location of the pins and everything worked fine :).
 
 ```bash 
 # Change the pins : pico-probe/src/picoprobe_config.h
@@ -73,6 +73,11 @@ In the future I want to add some extra features like read voltage of target and 
 
 # Layout
 <img src="./docs/pcb_layout.png" alt="Layout of the PCB" class="center"/>
+
+# Enclosure
+The enclosure is quickly made in Freecad with my 3D printer. I need to calibrate the heatbed again so it looks less good using my 3D printer, but it was printed in ~10min, with my help pressing down the print to the bed.  
+The main goal of the print was to protect the pins under the PCB.   
+<img src="./docs/enclosure.jpg" alt="Enclosure of the PCB"  height="350" class="center"/>
 
 
 # Hardware licence 
