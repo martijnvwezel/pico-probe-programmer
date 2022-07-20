@@ -42,7 +42,7 @@ tusb_desc_device_t const desc_device =
 
     .idVendor           = 0x2E8A, // Pi
     .idProduct          = 0x0004, // Picoprobe
-    .bcdDevice          = 0x0100, // Version 01.00
+    .bcdDevice          = 0x0102, // Version 01.00
     .iManufacturer      = 0x01,
     .iProduct           = 0x02,
     .iSerialNumber      = 0x03,
@@ -105,8 +105,8 @@ uint8_t const * tud_descriptor_configuration_cb(uint8_t index)
 char const* string_desc_arr [] =
 {
   (const char[]) { 0x09, 0x04 }, // 0: is supported language is English (0x0409)
-  "Raspberry Pi", // 1: Manufacturer
-  "Picoprobe",    // 2: Product
+  "Muino", // 1: Manufacturer
+  "Programmer",    // 2: Product
   usb_serial,     // 3: Serial, uses flash unique ID
 };
 
